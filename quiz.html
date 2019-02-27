@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.next {
+  background-color:#4CAF50;
+  color: white;
+}
+</style>
+<title> Emma Quiz</title>
+</head>
+<body>
+	<form name="my form"> 
+1. Who is my father? <br>
+<input type="radio" name="q1" value="a">Peter<br>
+<input type="radio" name="q1" value="b">Moses<br>
+<input type="radio" name="q1" value="c">Nathan<br><br>
+
+
+
+2. Who is my mother? <br>
+<input type="radio" name="q2" value="a">Peter<br>
+<input type="radio" name="q2" value="b">Moses<br>
+<input type="radio" name="q2" value="c">Irene<br><br>
+
+
+
+3. Who is my daughter? <br>
+<input type="radio" name="q3" value="a">Peter<br>
+<input type="radio" name="q3" value="b">Emma<br>
+<input type="radio" name="q3" value="c">Nathan<br><br>
+
+
+
+4. What are my sons' names?<br>
+<input type="radio" name="q4" value="a">Peter and Solomon<br>
+<input type="radio" name="q4" value="b">Moses and John<br>
+<input type="radio" name="q4" value="c">Moses and Solomon<br><br>
+<input type="button" value="submit" onclick="check()"></br><br><br>
+</form>
+<script>
+	function check(){
+		var q1=document.myform.q1.value;
+		var q2=document.myform.q2.value;
+		var q3=document.myform.q3.value;
+		var q4=document.myform.q4.value;
+		var count=0;
+
+	If (q1=="b"){count++;}
+	If (q2=="c"){count++;}
+	If (q3=="b"){count++;}
+	If (q4=="c"){count++;}{
+	alert("you got"+count+"marks");
+	}
+}
+</script>
+</body>
+</html>
